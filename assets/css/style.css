@@ -1,0 +1,239 @@
+.section1 {
+    box-shadow: 0 4px 8px rgb(178, 177, 177);
+}
+.home-link ul li a:hover {
+   color: #dc3545 !important;
+   transition: 0.3s;
+}
+.section2 {
+    background-color: rgba(243, 238, 238, 0.735);
+}
+
+.section2 img {
+    margin-top: 30px;
+    width: 100%;
+    max-height: 500px;
+    object-fit: contain;
+    border-radius: 5px;
+}
+/* Basic styling for gallery items */
+.gallery {
+    transition: transform 0.5s ease-in-out, border 0.3s ease;
+    position: relative; 
+    border: 1px solid transparent; 
+    overflow: hidden; 
+}
+
+.gallery:hover {
+    border: 1px solid black;
+    transform: scale(0.95); 
+}
+.special-div {
+    background-color: rgb(242, 241, 241);
+    margin: 0 auto; 
+    position: relative;
+    width: 100%; 
+    max-width: 225px; 
+}
+.special-div img {
+    width: 100%; 
+    height: auto; 
+    max-height: 200px; 
+}
+
+.desc {
+    text-align: center; 
+    padding: 10px 0;
+}
+
+.data {
+    margin-bottom: 10px; 
+}
+
+.gallery .icon {
+    padding: 7px 8px;
+    background-color: rgba(10, 8, 8, 0.685);
+    color: white;
+    position: absolute;
+    bottom: 1px; 
+    right: 1px; 
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.main-gallery {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 15px; 
+    margin: 0 auto; 
+}
+
+@media (min-width: 992px) {
+    .gallery {
+        flex: 1 1 calc(25% - 15px); /* Four items per row on large screens */
+    }
+}
+
+/* For medium screens (2 items per row) */
+@media (max-width: 991px) {
+    .gallery {
+        flex: 1 1 calc(50% - 15px); /* Two items per row on medium screens */
+    }
+}
+
+/* For small screens (1 item per row) */
+@media (max-width: 768px) {
+    .main-gallery {
+        justify-content: center; /* Center items horizontally */
+    }
+
+    .gallery {
+        flex: 1 1 calc(100% - 15px); /* One item per row on small screens */
+    }
+}
+
+
+.section4 img {
+    border: 5px solid red;
+    border-radius: 12px;
+
+}
+
+.section4 {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    background-color: rgba(243, 238, 238, 0.735);
+}
+.section5{
+    border-radius: 9px;
+    margin: 0 20px;
+}
+.section4 p::selection{
+    background-color:  #dc3545;
+    color:white;
+}
+.section4 h3::selection{
+    background-color:  #dc3545;
+    color:white;
+}
+.section4 h5::selection{
+    background-color:  #dc3545;
+    color:black;
+}
+.section4 span::selection{
+    background-color:  #dc3545;
+    color:white;
+}
+.special-about{
+    background-color:rgba(243, 238, 238, 0.735);
+}
+
+.section-about p{
+    margin-top: 30px;
+margin-left: 25%;
+width: 50%;
+line-height: 1.5;
+}
+.card-img-top{ 
+    margin: 20px auto;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+}
+.cards-shadow{
+    box-shadow: 0 0 10px rgb(225, 222, 222);
+    border-radius: 5px;
+    border: 0px solid rgb(225, 222, 222) ;
+}
+.cards-hover {
+    transition: transform 0.5s ease-in-out; 
+}
+
+.cards-hover:hover {
+    transform: translateY(-5%); 
+}
+.contact-body {
+    background-color: rgba(239, 239, 239, 0.842);
+}
+
+.bg-img {
+    background-image: url('../img/shop.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%; /* Ensures the background image covers the height of the column */
+    min-height: 300px; /* Adjust this value based on your design needs */
+    border-radius: 5px 0 0 5px; /* Rounded corners for the left side */
+}
+
+.card-body {
+    background-color: #fff; /* Background color for the form section */
+    border-radius: 0 5px 5px 0; /* Rounded corners for the right side */
+}
+
+@media (max-width: 768px) {
+    .bg-img {
+        min-height: 200px; /* Adjust for smaller screens */
+    }
+
+    .card-body {
+        padding: 1rem; /* Adjust padding for smaller screens */
+    }
+}
+
+
+.form-data{
+    background-color:rgba(239, 239, 239, 0.842);
+   
+}
+.icon button{
+    border: none;
+}
+.product-icon button{
+    border: none;
+}
+.submit-js{
+    margin-left: 40%;
+    margin-top: 20px;
+}
+.js-head{
+    margin-left: 79%;
+}
+.img-prod-offcanvas{
+    width: 50%;
+}
+/* navbar responsiveness */
+/* Hide the navbar on small screens by default */
+.nav {
+    display: none;
+}
+
+/* Show the navbar when the #menu is targeted */
+#menu:target {
+    display: block;
+}
+
+/* Show the full navbar on medium and large screens */
+@media (min-width: 768px) {
+    .nav {
+        display: flex !important;
+    }
+}
+
+/* Button styles for small screens */
+.menu-icon {
+    cursor: pointer;
+    display: none;
+}
+
+/* Show the menu icon on small screens */
+@media (max-width: 767px) {
+    .menu-icon {
+        display: block;
+    }
+}
